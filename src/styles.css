@@ -1,0 +1,92 @@
+/* Reset e Fundo */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  background-color: #c9c9c9;
+  /* Preto profundo */
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 0 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Header - Estilo do seu desenho */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #0055ff;
+  /* Linha azul */
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+
+.header nav span {
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Barra de Busca - Centralizada e Minimalista */
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px 0;
+}
+
+.search-input {
+  width: 400px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  padding: 12px 20px;
+  border-radius: 30px;
+  color: #fff;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #e62429;
+}
+
+.search-button {
+  background: #e62429;
+  border: none;
+  color: #fff;
+  padding: 0 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-button:hover {
+  background: #ff2b32;
+}
+
+/* Grid de Personagens */
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+  padding-bottom: 50px;
+}
