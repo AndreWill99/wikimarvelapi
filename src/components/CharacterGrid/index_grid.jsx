@@ -26,7 +26,7 @@ const CharacterGrid = ({ characters, loading }) => {
                 <Link key={hero.id} to={`/character/${hero.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                     <CharacterCard
                         name={hero.name}
-                        image={hero.image.url}
+                        image={hero.image}
                     />
                 </Link>
             ))}

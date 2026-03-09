@@ -4,7 +4,9 @@ import './style_card.css'; // O CSS que define o card com bordas arredondadas
 
 
 const CharacterCard = ({ name, image }) => {
-  const imageUrl = image.url.replace("http://", "https://");
+  // Evita crash se "image" ou "image.url" vierem vazios/inválidos da API
+  const imageUrl = image?.url ? image.url.replace("http://", "https://") : "";
+
   return (
     <div className="character-card">
       <div className="image-container">
