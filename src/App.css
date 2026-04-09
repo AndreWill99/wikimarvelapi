@@ -318,3 +318,80 @@
   border-color: #b30000;
   font-weight: 600;
 }
+
+/* Responsiveness Setup */
+@media (max-width: 1024px) {
+  .character-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 20px 30px;
+  }
+
+  .character-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .circle-avatar {
+    width: 200px;
+    height: 330px;
+  }
+
+  .team-badge,
+  .pub-card {
+    width: 200px;
+  }
+
+  .publisher-row,
+  .teams-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .search-area {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .search-box {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 15px 15px;
+  }
+
+  .character-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .circle-avatar {
+    width: 150px;
+    height: 250px;
+  }
+
+  .search-filters {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .carousel-arrow {
+    display: none;
+  }
+
+  .carousel-track {
+    overflow-x: auto;
+  }
+}

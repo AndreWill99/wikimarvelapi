@@ -48,3 +48,36 @@
   color: #ffffff;
   cursor: pointer;
 }
+
+/* Responsiveness for Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .logo {
+    width: auto;
+    height: 40px;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 10px;
+    gap: 10px;
+  }
+
+  .logo {
+    height: 35px;
+  }
+
+  .navbar-links {
+    gap: 15px;
+  }
+}
