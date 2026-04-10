@@ -150,3 +150,39 @@ a {
     color: #666;
     margin-top: 4px;
 }
+
+/* Responsiveness Settings */
+@media (max-width: 768px) {
+    .details-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 30px 20px;
+        order: -1;
+        /* Ensures sidebar stays above the content if flex items were changed */
+    }
+
+    .detail-image-wrapper {
+        justify-content: center;
+    }
+
+    .info-section {
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-content-details {
+        padding: 30px 20px;
+    }
+
+    .hero-name-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .connections-grid {
+        justify-content: center;
+    }
+}
